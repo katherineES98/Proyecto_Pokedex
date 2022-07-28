@@ -1,0 +1,87 @@
+body{
+  
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center center;
+   margin-left: 100px;
+   margin-right: 100px;
+   
+} 
+  
+  .cardstyle{
+    top: 100px;
+   }
+
+   .titulo{
+      text-align: center;
+      margin-top: 30px;
+
+    
+   }
+   .card-title{
+      text-align: center;
+      size: 30px;
+      background-color: #FFD700;
+   }
+   
+ 
+   .union{
+     text-align: center;
+     margin-top: 40px;
+   }
+   
+   .inputsearch{
+      width: 600px;
+      height: 60px;
+      border: 2px solid #1b4295; 
+   }
+
+   .search{
+   width: 200px;
+    height: 60px;
+   }
+   .inputsearch::placeholder {
+      color: #1b4295; 
+      text-align: center;
+      padding-top: 30px;
+    }
+   .search {
+      background: #fff; /* color de fondo */
+      color: #1b4295; /* color de fuente */
+      border: 2px solid #1b4295; /* tamaño y color de borde */
+      padding: 16px 20px;
+      border-radius: 3px; /* redondear bordes */
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      display: inline-block;
+    }
+    .search:hover {
+      color: #fff; /* color de fuente hover */
+    }
+    .search::after {
+      content: "";
+      background: #1b4295; /* color de fondo hover */
+      position: absolute;
+      z-index: -1;
+      padding: 16px 20px;
+      display: block;
+      top: 0;
+      bottom: 0;
+      left: -100%;
+      right: 100%;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+    }
+    .search:hover::after {
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+    }
+
+
+   
